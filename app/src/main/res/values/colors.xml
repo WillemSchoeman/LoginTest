@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Extra colors added here. -->
+
+    <color name="kindablue">#3AA19D</color>
+
+    <color name="colorBlueDark">#0d47a1</color>
+    <color name="colorBlue">#1565C0</color>
+    <color name="colorBlueLight">#1976D2</color>
+
+    <color name="colorLightBlueDark">#01579B</color>
+    <color name="colorLightBlue">#0277BD</color>
+    <color name="colorLightBlueLight">#0288D1</color>
+
+    <color name="colorCyanDark">#006064</color>
+    <color name="colorCyan">#00838F</color>
+    <color name="colorCyanLight">#0097A7</color>
+
+    <color name="colorTealDark">#004D40</color>
+    <color name="colorTeal">#00695C</color>
+    <color name="colorTealLight">#00796B</color>
+
+    <color name="colorGreenDark">#1b5e20</color>
+    <color name="colorGreen">#2E7D32</color>
+    <color name="colorGreenLight">#388E3C</color>
+
+    <color name="colorRedDark">#b71c1c</color>
+    <color name="colorRed">#c62828</color>
+    <color name="colorRedLight">#d32f2f</color>
+
+    <color name="colorPurpleDark">#4A148C</color>
+    <color name="colorPurple">#6A1B9A</color>
+    <color name="colorPurpleLight">#7B1FA2</color>
+
+    <color name="colorBlueGreyDark">#263238</color>
+    <color name="colorBlueGrey">#37474F</color>
+    <color name="colorBlueGreyLight">#455a64</color>
+
+    <color name="colorGreyDark">#212121</color>
+    <color name="colorGrey">#424242</color>
+    <color name="colorGreyLight">#616161</color>
+
+</resources>

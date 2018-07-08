@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoginTest</string>
+
+    <string name="welcome_text">Welcome</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
+
+    <string name="register_text">Register</string>
+    <string name="submit_button">Submit</string>
+
+</resources>
