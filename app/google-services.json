@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "190499567044",
+    "firebase_url": "https://logintest-ed20d.firebaseio.com",
+    "project_id": "logintest-ed20d",
+    "storage_bucket": "logintest-ed20d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190499567044:android:cb3a88f2bd57c8a6",
+        "android_client_info": {
+          "package_name": "com.example.shumy.logintest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190499567044-s445ijfthoj7uo84j04acr9tv7cdop48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdLN8WqGxTGJYBNOsU3p5MUySOmlqSoKo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
