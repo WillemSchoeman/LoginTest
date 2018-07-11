@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -18,16 +19,17 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = "LoginActivity";
 
     private FirebaseAuth mAuth;
-    Button registerButton;
-    Button loginButton;
-    EditText emailText;
-    EditText passwordText;
+    private Button registerButton;
+    private Button loginButton;
+    private EditText emailText;
+    private EditText passwordText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,18 +48,19 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                registerNewUser();
+            }
+        });
+
         mAuth = FirebaseAuth.getInstance();
-    }
-
-    // Executed when Sign in button pressed
-
-    public void signInExistingUser(View v)   {
-        attemptLogin();
     }
 
     // Executed when Register button pressed
 
-    public void registerNewUser(View v) {
+    public void registerNewUser() {
         Intent registerIntent = new Intent(this, RegisterActivity.class);
         finish();
         startActivity(registerIntent);
