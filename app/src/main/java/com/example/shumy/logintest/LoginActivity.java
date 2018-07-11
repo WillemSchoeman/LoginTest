@@ -21,34 +21,36 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import org.w3c.dom.Text;
+
 public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = "LoginActivity";
 
     private FirebaseAuth mAuth;
-    private Button registerButton;
-    private Button loginButton;
-    private EditText emailText;
-    private EditText passwordText;
+    private Button mRegisterButton;
+    private Button mLoginButton;
+    private EditText mEmailText;
+    private EditText mPasswordText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        registerButton = findViewById(R.id.register_button);
-        loginButton = findViewById(R.id.login_button);
-        emailText = findViewById(R.id.email_text);
-        passwordText = findViewById(R.id.password_text);
+        mRegisterButton = findViewById(R.id.register_button);
+        mLoginButton = findViewById(R.id.login_button);
+        mEmailText = findViewById(R.id.email_text);
+        mPasswordText = findViewById(R.id.password_text);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                attemptLogin();
+                attemptSignIn();
             }
         });
 
-        registerButton.setOnClickListener(new View.OnClickListener() {
+        mRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 registerNewUser();
@@ -66,10 +68,10 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(registerIntent);
     }
 
-    private void attemptLogin() {
+    private void attemptSignIn() {
 
-        String email = emailText.getText().toString();
-        String password = passwordText.getText().toString();
+        String email = mEmailText.getText().toString();
+        String password = mPasswordText.getText().toString();
 
         if (email.isEmpty())
             if (email.equals("") || password.equals("")) return;
@@ -79,12 +81,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
-                Log.d(TAG, "signInWithEmail() onComplete: " + task.isSuccessful());
-
                 if (!task.isSuccessful()) {
-                    Log.d(TAG, "Problem Signing in: " + task.getException());
                     showErrorDialog("There was a problem signing in");
-                } else {
+                }
+                else {
                     Intent loginIntent = new Intent(LoginActivity.this, MainActivity.class);
                     finish();
                     startActivity(loginIntent);
@@ -92,6 +92,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
 
     private void showErrorDialog(String message) {
 

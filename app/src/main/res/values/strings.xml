@@ -8,6 +8,8 @@
     <string name="register_text">Registration Form</string>
     <string name="submit_button">Submit</string>
     
-    <string name="logged_in">You logged in successfully!</string>
+    <string name="logged_in">Welcome Home</string>
+
+    <string name="signout">Sign Out</string>
 
 </resources>
