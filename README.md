@@ -5,7 +5,7 @@ This is a simple android app that uses [Google Firebase](https://firebase.google
 
 **Sample Screenshots:**
 
-<img src="app/src/main/res/screenshots/LoginScreen.jpg" width="250"> <img src="app/src/main/res/screenshots/RegisterPage.jpg" width="250"> <img src="app/src/main/res/screenshots/HomeScreen.jpg" width="250">
+<img src="app/src/main/screenshots/LoginScreen.jpg" width="250"> <img src="app/src/main/screenshots/RegisterPage.jpg" width="250"> <img src="app/src/main/screenshots/HomeScreen.jpg" width="250">
 
 **Note:**
 
